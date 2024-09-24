@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 0px 90px 0px 90px;
+    background-color: #0062BE;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: #0062BE;
+}
+
+#nav{
+    width: 100%;
+    height: 100px;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#nav ul {
+    list-style: none;
+    display: flex;
+    display: flex;
+    gap: 40px;
+    color: #fff;
+}
+
+#nav ul li{
+    cursor: pointer;
+}
+
+#logo-container img{
+    width: 85px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+#hamburger{
+    display: none;
+}
+
+#second-nav{
+    display: none;
+}
+
+#hero{
+    width: 100%;
+    height: calc(100vh - 100px);
+    /* background-color: brown; */
+    display: flex;
+}
+
+#left{
+    width: 50%;
+    height: 100%;
+    /* background-color: black; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+    line-height: 1.1;
+    padding-top: 100px;
+}
+
+#left h2{
+    font-size: 3.7em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    white-space: nowrap;
+}
+
+#left h1{
+    font-size: 7.5em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+#left p{
+    text-wrap: balance;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 17px;
+}
+
+#left button{
+    width: 200px;
+    border-radius: 50px;
+    padding: 7px 10px;
+    font-weight: 700;
+    border: none;
+    margin-top: 21px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+#right{
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#right img{
+    width: 240px;
+    transition: 0.5s ease;
+}
+
+#right img:hover{
+    transform: scale(1.1);
+}
+#pepsi-main{
+    margin-top: 120px;
+    margin-left: 190px;
+}
+
+#social-media{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    gap: 20px;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+#social-media a{
+    color: #fff;
+}
+
+.fa-brands{
+    cursor: pointer;
+}
+
+#pepsi-icons-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+#pepsi-container{
+    display: flex;
+    gap: 40px;
+    position: relative;
+}
+#pepsi-container img{
+    width: 50px;
+}
+
+#blue-pepsi{
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+#blue-pepsi:hover{
+    transform: translateY(-10px);
+}
+
+#white-pepsi{
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+#white-pepsi:hover{
+    transform: translateY(-10px);
+}
+
+#black-pepsi{
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+#black-pepsi:hover{
+    transform: translateY(-10px);
+}
+@media (max-width: 991px) {
+
+    html,body{
+        padding: 0px 0px 0px 0px;
+        height: auto;
+    }
+
+    #main{
+        height: auto;
+    }
+
+    #nav{
+        padding: 0px 20px 0px 20px;
+        position: relative;
+    }
+
+    #nav ul{
+        display: none;
+    }
+
+    #hamburger{
+        display: block;
+        font-size: 25px;
+        color: #fff;
+    }
+
+    #logo-container img{
+        width: 50px;
+    }
+
+    #second-nav{
+        display: none; 
+        color: #fff;
+        align-items: center;
+        /* z-index: 999; */
+        /* position: absolute; */
+        width: 100%;
+        padding: 20px 0px 20px 40px;
+        max-height: 0; 
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;  
+    }
+
+    #second-nav ol{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #hero{
+        flex-direction: column;
+        height: auto;
+    }
+
+    #left{
+        width: 100%;
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 0px;
+        padding-left: 15px;
+    }
+
+    #left h2{
+        font-size: 3.2em;
+    }
+
+    #left h1{
+        font-size: 6em;
+    }
+
+    #right{
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding-bottom: 0px;
+    }
+
+    #pepsi-main{
+        margin-top: 90px;
+        margin-left: 0;
+    }
+
+    #right img{
+        width: 170px;
+    }
+
+    #pepsi-icons-container{
+        position: absolute;
+        top: 970px;
+        height: auto;
+    }
+
+    
+}
+
+@media (max-width: 393px) {
+    #left h2{
+        white-space: normal;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1335px) {
+    html,body{
+        padding: 0px 20px 0px 20px;
+    }
+}
+
+@media (min-width: 250px) and (max-width: 377px) {
+    #pepsi-icons-container{
+        top: 1080px;
+    }
+}
+
