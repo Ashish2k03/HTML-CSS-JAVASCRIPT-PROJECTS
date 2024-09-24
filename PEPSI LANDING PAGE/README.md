@@ -12,14 +12,17 @@ The Pepsi Landing Page is a modern, responsive design that showcases the brand's
 - HTML
 - CSS
 - JavaScript
+- [Animate.css](https://animate.style/) for animations
 
 ## Features
 - Responsive design that adapts to various screen sizes.
 - Visually appealing layout that aligns with Pepsi's branding.
+- Engaging animations to enhance user experience.
 
 ## Personal Modifications
 - Developed from scratch, focusing on modern design principles.
 - Customized colors and fonts to match Pepsi's branding.
+- Utilized Animate.css to add dynamic animations throughout the page.
 - Structured the layout for optimal user interaction and readability.
 
 ## Usage Instructions
