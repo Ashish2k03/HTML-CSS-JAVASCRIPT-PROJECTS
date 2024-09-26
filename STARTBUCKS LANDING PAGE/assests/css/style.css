@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 0px 50px 0px 50px;
+    
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    /* background-color: #0062BE; */
+    background-color: transparent;
+}
+
+#nav{
+    width: 100%;
+    height: 100px;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#nav ul {
+    list-style: none;
+    display: flex;
+    display: flex;
+    gap: 40px;
+    color: #333333;
+}
+
+#nav ul li{
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+#logo-container img{
+    width: 85px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+#hamburger{
+    display: none;
+}
+
+#second-nav{
+    display: none;
+}
+
+#hero{
+    width: 100%;
+    height: calc(100vh - 100px);
+    /* background-color: brown; */
+    display: flex;
+}
+
+#left{
+    width: 50%;
+    height: 100%;
+    /* background-color: black; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    line-height: 1.1;
+    padding-top: 90px;
+}
+
+#left h2{
+    font-size: 3.7em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    white-space: nowrap;
+    color: #333333;
+}
+
+#left h1{
+    font-size: 4.5em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #333333;
+}
+
+#left span{
+    font-weight: 900;
+    color: #017143;
+}
+
+#left p{
+    text-wrap: balance;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 17px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+#left button{
+    width: 150px;
+    border-radius: 50px;
+    padding: 12px 10px;
+    font-weight: 700;
+    border: none;
+    margin-top: 21px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    background-color: #017143;
+    color: #fff;
+}
+
+#right{
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+#right img{
+    width: 340px;
+    transition: 0.5s ease;
+}
+
+#right img:hover{
+    transform: scale(1.1);
+}
+#coffee-main{
+    margin-top: -50px;
+    margin-left: 250px;
+    z-index: 1;
+}
+
+#social-media{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    margin-right: 90px;
+    gap: 30px;
+    font-size: 1.5em;
+    color: #fff;
+    z-index: 1;
+}
+
+#social-media a{
+    color: #fff;
+}
+
+.fa-brands{
+    cursor: pointer;
+}
+
+#half-circle-1{
+    width: 620px; 
+    height: 620px; 
+    background-color: #017143; 
+    border-top-left-radius: 100%; 
+    border-bottom-right-radius: 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+}
+
+#coffee-icons-container{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    position: absolute;
+    /* top: 585px; */
+    bottom: 0;
+    left: 50%;
+    z-index: 1;
+}
+
+#coffee-container{
+    display: flex;
+    gap: 40px;
+    position: relative;
+}
+#coffee-container img{
+    width: 60px;
+}
+
+#green-glass{
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+#green-glass:hover{
+    transform: translateY(-10px);
+}
+
+#light-pink-glass{
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+#light-pink-glass:hover{
+    transform: translateY(-10px);
+}
+
+#pink-glass{
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+#pink-glass:hover{
+    transform: translateY(-10px);
+}
+@media (max-width: 991px) {
+
+    html,body{
+        padding: 0px 0px 0px 0px;
+        height: auto;
+    }
+
+    #main{
+        height: auto;
+    }
+
+    #nav{
+        padding: 0px 20px 0px 20px;
+        position: relative;
+    }
+
+    #nav ul{
+        display: none;
+    }
+
+    #hamburger{
+        display: block;
+        font-size: 25px;
+        color: #017143;
+        z-index: 999;
+    }
+
+    #logo-container img{
+        width: 50px;
+    }
+
+    #second-nav{
+        display: none; 
+        align-items: center;
+        width: 100%;
+        padding: 50px 0px 50px 40px;
+        max-height: 0; 
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;  
+        position: fixed;
+        top: 0;
+        z-index: 998;
+        background-color: #017143;
+    }
+
+    #second-nav ol{
+        height: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 25px; /*20px*/
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #fff; /*black*/
+    }
+
+    #hero{
+        flex-direction: column;
+        height: auto;
+    }
+
+    #left{
+        width: 100%;
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 0px;
+        padding-left: 15px;
+    }
+
+    #left h2{
+        font-size: 2.2em;
+    }
+
+    #left h1{
+        font-size: 3em;
+    }
+
+    #right{
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding-bottom: 0px;
+    }
+
+    #coffee-main{
+        margin-top: 30px;
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #right img{
+        width: 240px;
+    }
+
+    #coffee-icons-container{
+        position: absolute;
+        top: 970px;
+        left: 50%;
+        transform: translate(-50%);
+        height: auto;
+    }
+
+    #half-circle-1{
+        display: none;
+    }
+
+    #half-circle-2{
+        width: 370px; 
+        height: 370px; 
+        border-radius: 50%;
+        background-color: #017143; 
+        position: absolute;
+        z-index: -1;
+    }
+
+    #social-media{
+        margin-right: 30px;
+    }
+
+    
+}
+
+@media (max-width: 393px) {
+    #left h2{
+        white-space: normal;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1335px) {
+    html,body{
+        padding: 0px 20px 0px 20px;
+    }
+}
+
+@media (min-width: 250px) and (max-width: 377px) {
+    #coffee-icons-container{
+        top: 1080px;
+    }
+}
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <link rel="shortcut icon" href="./assests/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bakbak+One&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jersey+10&family=New+Amsterdam&family=Nunito:ital,wght@0,872;1,872&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <div id="half-circle-1" class="half-circle-class"></div>
+        <div id="nav">
+            <div id="logo-container">
+                <a href="index.html"><img src="./assests/images/logo.png" alt="logo" class="animate__animated animate__flipInY animate__delay-0s"></a>
+            </div>
+
+            <ul>
+                <li>Home</li>
+                <li>Menu</li>
+                <li>What's new</li>
+                <li>Contact</li>
+            </ul>
+            <i class="fa-solid fa-bars" id="hamburger" onclick="myNav()"></i>
+        </div>
+        
+        <div id="second-nav">
+            <ol id="ham-menu">
+                <li>Home</li>
+                <li>Menu</li>
+                <li>What's new</li>
+                <li>Contact</li>
+            </ol>
+        </div> <!--Nav Ends-->
+
+        <div id="hero">
+            <div id="left">
+                <h2>It's not just Coffee</h2>
+                <h1 class="animate__animated animate__lightSpeedInLeft animate__delay-0s">It's <span id="colorchange">Starbucks</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odio in repellat cum harum magnam omnis, aspernatur, amet cumque, repudiandae iure perferendis deleniti fugiat numquam iste? Cumque repellendus fuga accusantium dignissimos facere commodi provident quis. Obcaecati explicabo temporibus ut beatae?</p>
+                <button id="btncolor">Learn More</button>
+            </div> <!--Left ends-->
+
+            <div id="right">
+                <div id="coffee-main">
+                    <div id="half-circle-2" class="half-circle-class"></div>
+                    <img src="./assests/images/greenglass.png" alt="Coffee-Image" id="changeImg" class="animate__animated animate__pulse animate__infinite	infinite">
+                </div>
+
+                <div id="social-media">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <a href="https://www.instagram.com/scw_virtual_boy/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div> <!---Right ends-->
+        </div> <!---Hero Ends-->
+
+        <div id="coffee-icons-container">
+            <div id="coffee-container">
+                <img src="./assests/images/smallgreenglass.png" alt="Green-Glass-Image" id="green-glass" onclick="changeColor1()">
+                <img src="./assests/images/smalllightpinkglass.png" alt="Light-Pink-Glass-Image" id="light-pink-glass" onclick="changeColor2()">
+                <img src="./assests/images/smallpinkglass.png" alt="Pink-Glass-Image" id="pink-glass" onclick="changeColor3()">
+            </div>
+        </div>
+    </div><!--Main Ends-->
+
+<script src="./assests/javascript/script.js"></script>
+</body>
+</html>
